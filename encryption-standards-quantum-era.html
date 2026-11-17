@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>密码管理器入门：怎样选、怎样用、怎样备份 - 红杏云跃迁日志</title>
-<meta name="description" content="密码太多记不住，又不敢重复使用？介绍密码管理器的作用、选择时要看的几点、日常使用的好习惯以及主密码与恢复方式的备份。">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AES加密能保护什么：传输、文件与量子风险不能混成一个指标</title>
+<meta content="区分AES算法、认证加密、证书验证与文件完整性，用浏览器和文件哈希操作理解保护边界，并说明如何理性阅读量子安全宣传。" name="description"/>
+<style>
     :root { --space-bg: #0B0F19; --silver: #E2E8F0; --accent-blue: #38BDF8; --red-apricot: #FF4081; }
     body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: var(--space-bg); color: var(--silver); margin: 0; padding: 0; line-height: 1.6; overflow-x: hidden; }
     
@@ -77,46 +78,33 @@
     </style>
 </head>
 <body>
-  <div class="bg-grid" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;"></div>
-  <header>
-    <a href="index.html" class="logo" style="text-decoration: none;">
-      <svg viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="45" fill="none" stroke="var(--red-apricot)" stroke-width="1" stroke-dasharray="4 4"/>
-        <polyline points="30,70 50,40 70,60 80,30" fill="none" stroke="var(--accent-blue)" stroke-width="1.5"/>
-        <circle cx="30" cy="70" r="3" fill="#FFF"/>
-        <circle cx="50" cy="40" r="4" fill="var(--red-apricot)"/>
-        <circle cx="70" cy="60" r="3" fill="#FFF"/>
-        <circle cx="80" cy="30" r="5" fill="var(--red-apricot)"/>
-      </svg>
+<div class="bg-grid" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;"></div>
+<header>
+<a class="logo" href="index.html" style="text-decoration: none;">
+<svg viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="45" stroke="var(--red-apricot)" stroke-dasharray="4 4" stroke-width="1"></circle>
+<polyline fill="none" points="30,70 50,40 70,60 80,30" stroke="var(--accent-blue)" stroke-width="1.5"></polyline>
+<circle cx="30" cy="70" fill="#FFF" r="3"></circle>
+<circle cx="50" cy="40" fill="var(--red-apricot)" r="4"></circle>
+<circle cx="70" cy="60" fill="#FFF" r="3"></circle>
+<circle cx="80" cy="30" fill="var(--red-apricot)" r="5"></circle>
+</svg>
       红杏云
     </a>
-    <div class="header-nav">
-      <nav class="nav-links">
-        <a href="#features">架构</a>
-        <a href="#streaming">协议</a>
-        <a href="#pricing">权限</a>
-        <a href="#faq">解密</a>
-        <a href="#testi">通讯</a>
-        <a href="quantum-logs.html">跃迁日志</a>
-      </nav>
-      <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="sci-btn btn-red" rel="nofollow" target="_blank" style="padding: 8px 20px; font-size: 0.85rem;">初始化</a>
-    </div>
-  </header>
-  <div class="container hub-card" style="margin-top: 120px; margin-bottom: 80px; max-width: 900px; background: rgba(11,15,25,0.9); backdrop-filter: blur(10px);">
-    <div class="seo-content">
-      <h1 style="font-size: 2.5rem; margin-bottom: 30px;">密码管理器入门：怎样选、怎样用、怎样备份</h1>
-      <a href="quantum-logs.html" style="display:inline-block; margin-bottom: 30px; text-decoration:none; opacity:0.8;">&larr; 返回列表</a>
-<h2>一、它解决什么问题</h2>
-<p>最危险的习惯是在多个网站使用同一个密码。密码管理器帮你为每个站点生成并保存不同的强密码，你只需要记住一个主密码。</p>
-<h2>二、选择时看什么</h2>
-<ul><li>是否支持你常用的系统与浏览器。</li><li>加密方式与是否经过独立安全审计。</li><li>是否支持两步验证、共享与紧急访问。</li></ul>
-<h2>三、日常怎么用</h2>
-<p>新注册网站时，用它生成长而随机的密码；旧账号逐步迁移，先从邮箱、支付、工作账号开始。开启自动填充时，留意网址是否正确，避免在仿冒页面被填入。</p>
-<h2>四、主密码与备份</h2>
-<p>主密码要长、独特、只用在这里，建议用几个无关词语组成的长句。把恢复密钥打印后放在安全处，不要只存放在电脑里。</p>
-<h2>五、与两步验证配合</h2>
-<p>密码管理器加两步验证，是账号安全的黄金组合。验证器的备份码同样要妥善保管。</p>
- </div>
-  </div>
+<div class="header-nav">
+<nav class="nav-links">
+<a href="#features">架构</a>
+<a href="#streaming">协议</a>
+<a href="#pricing">权限</a>
+<a href="#faq">解密</a>
+<a href="#testi">通讯</a>
+<a href="quantum-logs.html">跃迁日志</a>
+</nav>
+<a class="sci-btn btn-red" href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" style="padding: 8px 20px; font-size: 0.85rem;" target="_blank">初始化</a>
+</div>
+</header>
+<div class="container hub-card" style="margin-top: 120px; margin-bottom: 80px; max-width: 900px; background: rgba(11,15,25,0.9); backdrop-filter: blur(10px);">
+<div class="seo-content"><h1 style="font-size: 2.5rem; margin-bottom: 30px;">AES加密能保护什么：传输、文件与量子风险不能混成一个指标</h1><div data-swc-article-body="2026-11-16"><h2>数字很大不等于整套系统安全</h2><p>AES二五六经常出现在产品宣传中，但它描述的是加密算法与密钥长度，不能自动证明账号、终端、密钥保存或服务运营都可靠。NIST的AES标准包含不同密钥长度，实际安全还取决于使用方式。理解加密应该先问数据在哪里、由谁处理、什么人能拿到密钥，而不是看见一个较大的数字就停止检查其他条件。</p><h2>先区分三种数据所在的位置</h2><p>文件保存在硬盘上时，关注的是存储保护；从设备传到服务器时，关注的是传输保护；应用打开后在内存中处理，又有不同风险。一个服务支持HTTPS，不代表它保存的文件已经按同样方式加密。反过来，硬盘加密也不能保护你把文件发给错误收件人。把数据流程画成几步，比一句“全程安全”更容易发现空白。</p><h2>对称加密需要解决密钥管理</h2><p>AES属于对称加密，拥有相应密钥的一方可以执行必要的解密操作。密钥如果与公开文件放在同一位置，算法再强也无法弥补管理问题。使用成熟工具时，了解密码恢复、密钥备份与访问权限，比自行拼接加密命令更重要。组织环境中应明确谁能恢复、谁能撤销，以及人员变动后怎样调整授权。</p><h2>认证与加密是相关但不同的任务</h2><p>让旁观者看不懂内容是一项需求，确认内容没有被非授权修改是另一项需求。成熟协议通常组合相应机制，不能仅凭“用了AES”判断所有目标都满足。不要自行选择模式、随机数和标签参数来设计新方案。对普通用户而言，选择受维护的实现、保持证书验证并遵循正式配置，通常比追逐未经解释的安全等级更可执行。</p><h2>第一步在浏览器检查实际连接</h2><p>Chrome按F12打开开发者工具，找到Privacy and security面板中的Security概览，查看主来源的HTTPS状态，并通过View certificate检查证书。重点核对访问域名与证书信息是否符合预期，以及是否出现明显错误。这里检查的是浏览器当前连接，不代表你已经审计服务器存储，更不能证明网站业务本身可信。</p><h2>证书错误首先核对基础条件</h2><p>设备时间错误、域名输入错误或服务器证书部署异常，都可能触发警告。先确认自己访问的是正确地址与系统时间，再根据明确错误寻求处理。不要为了继续下载而习惯性忽略警告，也不安装来源不明的根证书。证书验证的作用是确认连接身份的一部分，绕过后即使页面正常显示，保护条件也已经改变。</p><h2>第二步用文件哈希理解完整性</h2><p>对自己的测试文件，在PowerShell运行<code>Get-FileHash -LiteralPath .\sample.txt -Algorithm SHA256</code>，记录结果，修改文件一处内容后再运行并比较。这个操作展示内容变化如何反映到摘要。哈希不是加密，不能从摘要恢复文件，也不会让原文件变成秘密。完整性检查与保密性检查要分别记录。</p><h2>哈希值必须来自可信的对照来源</h2><p>下载软件时，如果文件和所谓正确哈希都来自同一个被替换的页面，比较相同并不能充分证明真实性。应使用发布者提供的可信验证方式，必要时核对签名与正式发布信息。自己计算一串摘要只是得到标识，不等于自动完成来源认证。这个边界也适用于备份验收：能发现变化，不代表已经知道谁修改、为什么修改。</p><h2>量子风险不应化约成一个倒计时</h2><p>不同密码技术受到潜在量子攻击的影响不同，对称加密与公钥密码不能使用同一结论。NIST的迁移资料区分这些类别，实际安排需要结合系统与标准更新。普通使用者不必根据传闻预测某一天所有数据都会失效，应优先跟进软件维护与服务的明确迁移说明。未经验证的“量子级线路”不能替代密码实现证据。</p><h2>长期保存的资料需要持续维护</h2><p>保存年限较长的资料，应定期确认备份可读、恢复方法有效以及访问人员仍正确。保护并非一次加密后永远结束，软件停更、密钥丢失或权限未撤销都可能造成问题。用一份不敏感样本演练恢复，记录所需步骤与负责人，再处理正式流程。避免只关注攻击者能否破解，却没有准备自己合法恢复数据的方法。</p><h2>网络服务比较应看完整使用条件</h2><p>参考<a href="https://dajichang.mom/">加密连接机场服务对比</a>时，核对具体协议、客户端支持和公开隐私说明，不将算法名称当作独立安全认证。连接服务可以影响某段传输，但不能修复被入侵的终端或代替目标网站权限。将它放在整个数据流程中的正确位置，才能理解费用购买了什么能力，以及哪些责任仍需自己处理。</p><h2>用一个小演练验证理解是否正确</h2><p>选择测试文档，按正常工具保存、传输、接收并重新打开，分别检查身份、访问权限与文件内容。将每一步的保护和缺口写出来，不需要构造复杂攻击实验。若无法解释密钥在哪里、谁能读取或怎样恢复，就先补齐这些信息。清楚且能执行的流程，比给数据贴上军用级或未来级标签更有实际意义。</p></div></div>
+</div>
 </body>
 </html>
